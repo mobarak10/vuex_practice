@@ -4,6 +4,9 @@
         <button-component></button-component>
         <team-mates-component />
         <add-new-component />
+        <fetch-to-do-list-component />
+        <br>
+        <to-do-list-component />
     </div>
 </template>
 
@@ -12,6 +15,8 @@ import CounterComponent from "@/components/CounterComponent"
 import ButtonComponent from "@/components/ButtonComponent"
 import TeamMatesComponent from "@/components/TeamMatesComponent"
 import AddNewComponent from "@/components/AddNewComponent"
+import FetchToDoListComponent from "@/components/FetchToDoListComponent"
+import ToDoListComponent from "@/components/ToDoListComponent"
 export default {
     name: "App",
     components: {
@@ -19,6 +24,8 @@ export default {
         ButtonComponent,
         TeamMatesComponent,
         AddNewComponent,
+        FetchToDoListComponent,
+        ToDoListComponent,
     },
 }
 </script>

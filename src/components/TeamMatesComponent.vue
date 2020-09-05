@@ -2,7 +2,7 @@
     <div>
         <ul>
             <li v-for="(person, index) in teamMates" :key="index">
-                {{ person }}
+                {{ person.name }} ({{ person.age }})
             </li>
         </ul>
     </div>
