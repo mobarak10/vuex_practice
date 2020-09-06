@@ -1,19 +1,13 @@
-import Vue from "vue";
-import Vuex from "vuex";
 import state from './state'
 import * as getters from './getters'
 import * as mutations from './mutations'
 import * as actions from './actions'
-import todos from './models/todo'
 
-Vue.use(Vuex);
 
-export default new Vuex.Store({
+export default {
+  namespaced: true,
   state,
   getters,
   mutations,
   actions,
-    modules: {
-        todos
-    }
-});
+};

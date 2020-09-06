@@ -21,7 +21,7 @@ export default {
 
    computed:{
     //    ...mapState(['toDos'])
-        ...mapGetters(['task']),
+        ...mapGetters('todos',['task']),
 
         complate(){
             return this.task(true)

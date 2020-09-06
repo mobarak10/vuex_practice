@@ -25,11 +25,17 @@ export default {
     methods: {
         ...mapMutations(['addNewTeammate']),
         formSubmitHandeler(){
-            console.log(this.name);
-            this.addNewTeammate({
-                name: this.name,
-                age: this.age,
-            });
+            if (this.name == null) {
+                return alert('name can not be empty')
+            }else{
+                console.log(this.name);
+                this.addNewTeammate({
+                    name: this.name,
+                    age: this.age,
+                });
+            }
+            this.name = null
+            this.age = null
         }
 
 

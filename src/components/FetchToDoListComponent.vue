@@ -12,11 +12,11 @@ export default {
     name:"FetchToDoListComponent",
 
     computed:{
-        ...mapState(['toDoFetchClicked'])
+        ...mapState('todos',['toDoFetchClicked'])
     },
 
     methods: {
-        ...mapActions(['fetchToDoList'])
+        ...mapActions('todos',['fetchToDoList'])
     }
 }
 </script>
