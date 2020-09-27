@@ -1,5 +1,5 @@
 export default {
-    totalClicked: 5,
+    totalClicked: 0,
       teamMates: [],
       users: [],
 }

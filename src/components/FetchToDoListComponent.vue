@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Total Clicked = {{ toDoFetchClicked }} Times</p>
+        <p>Total Fetched = {{ toDoFetchClicked }} Times</p>
         <hr>
         <button @click="fetchToDoList">Fetch ToDo List</button>
     </div>

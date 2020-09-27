@@ -27,7 +27,10 @@ export default {
         formSubmitHandeler(){
             if (this.name == null) {
                 return alert('name can not be empty')
-            }else{
+            } else if(!this.age){
+                return alert('age can not be empty')
+            }
+            else{
                 console.log(this.name);
                 this.addNewTeammate({
                     name: this.name,
